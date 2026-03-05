@@ -4,103 +4,87 @@
 <head>
     <title>Задание 1</title>
     <meta charset="UTF-8">
-    
+
     <style>
-        body {
-            background-color: #0C0C0C;
-            padding: 20px;
-            font-family: Arial, sans-serif;
-        }
-        
-        h1 {
-            color: white;
-            text-align: center;
-            font-size: 37px;
-            margin-bottom: 40px;
-        }
-        
-        .collage {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 30px;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-        
-        .row {
-            display: flex;
-            justify-content: center;
-            gap: 40px;
-            width: 100%;
-        }
-        
-        .image-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 10px;
-        }
-        
-        .image-container img {
-            width: auto;
-            height: auto;
-            max-width: 100%;
-            border-radius: 5px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-        }
-        
-        .caption {
-            color: white;
-            font-size: 18px;
-            text-align: center;
-            padding: 5px 10px;
-            background-color: rgba(255, 255, 255, 0.1);
-            border-radius: 3px;
-            max-width: 100%;
-            word-wrap: break-word;
-        }
-        
-        .row .image-container {
-            flex: 0 0 auto;
-        }
-    </style>
+    body {
+        background-color: #0c0c0c;
+        padding: 40px 10px;
+        font-family: 'Segoe UI', Arial, sans-serif;
+        color: #e0e0e0;
+        margin: 0;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 32px;
+        margin-bottom: 50px;
+        color: #ffffff;
+    }
+
+    .collage {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 60px;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    .image-container {
+        width: 100%;
+        background-color: #1a1a1a;
+        border-radius: 8px;
+        border: 1px solid #333;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .image-container img {
+        width: 100%;
+        height: auto; 
+        display: block;
+    }
+
+    .caption {
+        padding: 15px;
+        font-size: 18px;
+        text-align: center;
+        background: #252525;
+        border-top: 1px solid #333;
+        color: #aaa;
+    }
+</style>
 </head>
 
 <body>
     <h1>Задание 1</h1>
     
     <div class="collage">
-        <div class="row">
-            <div class="image-container">
-                <img src="пункт2.png" alt="пункт 1">
-                <div class="caption">скрин 1</div>
-            </div>
-            
-            <div class="image-container">
-                <img src="пункт3.png" alt="пункт 2">
-                <div class="caption">скрин 2</div>
-            </div>
-        </div>
-        
-        <div class="row">
-            <div class="image-container">
-                <img src="пункт4.png" alt="пункт 3">
-                <div class="caption">скрин 3</div>
-            </div>
-            
-            <div class="image-container">
-                <img src="пункт5.png" alt="пункт 4">
-                <div class="caption">скрин 4</div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="image-container">
-                <img src="пункт6.png" alt="пункт 5">
-                <div class="caption">скрин 5</div>
-            </div>
-        </div>
+    <div class="image-container">
+        <img src="пункт2.png" alt="Ping kubsu.ru">
+        <div class="caption">PING</div>
     </div>
+    
+    <div class="image-container">
+        <img src="пункт3.png" alt="NSLOOKUP kubsu">
+        <div class="caption">DNS-записи для kubsu.ru</div>
+    </div>
+
+    <div class="image-container">
+        <img src="пункт4.png" alt="NSLOOKUP kubsu-dev">
+        <div class="caption">DNS-записи для kubsu-dev.ru</div>
+    </div>
+
+    <div class="image-container">
+        <img src="пункт5.png" alt="Whois">
+        <div class="caption">Дата регистрации доменов (Whois)</div>
+    </div>
+
+    <div class="image-container">
+        <img src="пункт6.png" alt="FileZilla">
+        <div class="caption">Работа в SFTP-клиенте FileZilla</div>
+    </div>
+</div>
 </body>
 </html>
